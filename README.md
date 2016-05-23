@@ -1,6 +1,5 @@
 # cleanupbot
 A neat little slack extension to archive and comment on past chats
-
 ---
 
 ### Use Cases: 
