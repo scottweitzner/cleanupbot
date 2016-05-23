@@ -1,0 +1,1 @@
+module.exports.SLACK_API_TOKEN = "YOUR API TOKEN HERE";
