@@ -1,12 +1,17 @@
 var
     RtmClient = require('@slack/client').RtmClient,
-    //tokens = require('./tokens'), //mus comment for production otherwise crashes on heroku
-    token = tokens.SLACK_API_TOKEN, //put your token in a file named "tokens.js"
     rtm = new RtmClient(token, {loglevel: 'debug'}),
     WebClient = require('@slack/client/lib/clients/web/client'),
     web = new WebClient(token),
     Slack = require('slack-node'),
     slack = new Slack(token);
+
+//Local Testing - must comment for production otherwise crashes on heroku
+//var tokens = require('./tokens'), 
+//    token = tokens.SLACK_API_TOKEN;
+
+//Heroku Deployment
+var token = process.env.SLACK_API_TOKEN;
 
 var
   stage = 0,
