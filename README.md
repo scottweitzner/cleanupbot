@@ -1,6 +1,8 @@
 # cleanupbot
 A neat little slack extension to archive and comment on past chats
 
+<img src="./screenshots/prompt.png" style="width: 500px;" />
+
 ---
 
 ### Use Cases: 
