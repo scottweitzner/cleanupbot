@@ -4,7 +4,7 @@
   "description": "clean up your chats",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node cleanupbot.js"
+    "start": "node cleanupbot"
   },
   "engines": {
     "node": "4.4.0"
