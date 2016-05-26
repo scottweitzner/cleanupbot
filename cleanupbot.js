@@ -1,9 +1,9 @@
 //Local Testing - must comment for production otherwise crashes on heroku
-// var tokens = require('./tokens'),
-//    token = tokens.SLACK_API_TOKEN;
+var tokens = require('./tokens'),
+   token = tokens.SLACK_API_TOKEN;
 
 // Heroku Deployment
-var token = process.env.SLACK_API_TOKEN;
+// var token = process.env.SLACK_API_TOKEN;
 
 
 var
@@ -144,3 +144,6 @@ rtm.on(RTM_EVENTS.MESSAGE, function(message){
       break;
   }
 });
+
+console.log("Bot Listening on port or localhost3000");
+app.listen(process.env.PORT || 3000);
