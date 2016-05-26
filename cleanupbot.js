@@ -5,7 +5,6 @@ var tokens = require('./tokens'),
 // Heroku Deployment
 // var token = process.env.SLACK_API_TOKEN;
 
-
 var
     RtmClient = require('@slack/client').RtmClient,
     rtm = new RtmClient(token, {loglevel: 'debug'}),
@@ -144,6 +143,3 @@ rtm.on(RTM_EVENTS.MESSAGE, function(message){
       break;
   }
 });
-
-console.log("Bot Listening on port or localhost3000");
-app.listen(process.env.PORT || 3000);
