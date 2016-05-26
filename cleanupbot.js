@@ -7,7 +7,7 @@ var tokens = require('./tokens'),
 
 var
     RtmClient = require('@slack/client').RtmClient,
-    rtm = new RtmClient(token, {loglevel: 'debug'}),
+    rtm = new RtmClient(token),
     WebClient = require('@slack/client/lib/clients/web/client'),
     web = new WebClient(token),
     Slack = require('slack-node'),
@@ -24,6 +24,7 @@ var
 rtm.start();
 
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
+console.log(RTM_EVENTS);
 var RTM_CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS.RTM;
 
 
