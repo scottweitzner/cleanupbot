@@ -15,5 +15,5 @@ Cleanupbot is an extension that allows you to specify a point in time to turn th
 
 ### Use It On Your Slack!
 Note: This is still in development, but feel free to download this yourself and play around with it
-#### To Download: 
+#### To Download: `https://github.com/scottweitzner/cleanupbot.git`
 
