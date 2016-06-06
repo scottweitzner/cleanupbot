@@ -24,9 +24,8 @@ var
 rtm.start();
 
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
-console.log(RTM_EVENTS);
 var RTM_CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS.RTM;
-
+console.log(RTM_CLIENT_EVENTS); //relays connection/authentication success in logs
 
 var get_users = function(){
   slack.api("users.list", {
