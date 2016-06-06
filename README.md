@@ -17,5 +17,5 @@ Note: This is still in development, but feel free to download this yourself and 
 ##### To Download:
 `git clone https://github.com/scottweitzner/cleanupbot.git` 
 
-The bot runs on a heroku server (I just use the free tier). In order to download this on your account you'll need to initialize a heroku server from the toolbelt. The slack API token must be added to the environment variables in heroku which can be doen by going to 
+The bot runs on a heroku server (I just use the free tier). In order to download this on your account you'll need to initialize a heroku server from the toolbelt. The slack API token must be added to the environment variables in heroku which can be done by going to your heroku dashboard, clicking settings, then clickig "reveal config variables"
 <img src="./screenshots/heroku_variable_example.jpeg" style="width: 500px;" />
